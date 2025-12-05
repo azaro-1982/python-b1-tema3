@@ -1,6 +1,5 @@
 # geometry.py
-
-
+import math
 def square_area(side_length: float) -> float:
     """
     Calculate the area of a square.
@@ -12,7 +11,8 @@ def square_area(side_length: float) -> float:
     - float: the area of the square.
     """
     # Write here your code
-    pass
+    area = side_length * side_length
+    return area
 
 
 def rectangle_area(base_length: float, height: float) -> float:
@@ -27,7 +27,8 @@ def rectangle_area(base_length: float, height: float) -> float:
     - float: the area of the rectangle.
     """
     # Write here your code
-    pass
+    area = base_length * height
+    return area
 
 
 def triangle_area(base_length: float, height: float) -> float:
@@ -42,7 +43,8 @@ def triangle_area(base_length: float, height: float) -> float:
     - float: the area of the triangle.
     """
     # Write here your code
-    pass
+    area = (base_length * height) / 2
+    return area
 
 
 def circle_area(radius: float) -> float:
@@ -56,4 +58,10 @@ def circle_area(radius: float) -> float:
     - float: the area of the circle
     """
     # Write here your code
-    pass
+    if not isinstance(radius, (int, float)):
+        raise TypeError("El valor debe ser un valor numérico")
+    if radius < 0:
+        raise ValueError("Radius cannot be negative")
+    
+    area = math.pi * (radius**2)
+    return area

@@ -26,7 +26,7 @@ Ejemplo:
     geometry.circle_area(5)
 
     Salida:
-    125
+    9
     4.0
     25
     15
@@ -84,7 +84,7 @@ circle_area_result = geometry.circle_area(5)
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-#print(square_area_result)
-#print(rectangle_area_result)
-#print(triangle_area_result)
-#print(circle_area_result)
+print(square_area_result)
+print(rectangle_area_result)
+print(triangle_area_result)
+print(circle_area_result)
